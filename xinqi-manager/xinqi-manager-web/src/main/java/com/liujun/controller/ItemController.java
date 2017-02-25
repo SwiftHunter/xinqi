@@ -12,13 +12,17 @@ import com.liujun.service.ItemService;
 @Controller
 public class ItemController {
 
-	@Autowired
-	private ItemService itemService;
-	
-	@RequestMapping("/item/{itemId}")
-	@ResponseBody
-	private Item getItemById(@PathVariable Integer itemId) {
-		Item item = itemService.getItemById(itemId);
-		return item;
+//	@Autowired
+//	private ItemService itemService;
+//	
+//	@RequestMapping("/item/{itemId}")
+//	@ResponseBody
+//	private Item getItemById(@PathVariable Integer itemId) {
+//		Item item = itemService.getItemById(itemId);
+//		return item;
+//	}
+	@RequestMapping("/test")
+	private String showLogin() {
+		return "layout";
 	}
 }
