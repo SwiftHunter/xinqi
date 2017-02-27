@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.liujun.entity.Item;
 import com.liujun.service.ItemService;
-import com.taotao.common.pojo.DataGridResult;
 
 @Controller
-public class ItemController {
+public class RegisterController {
 
 //	@Autowired
 //	private ItemService itemService;
@@ -22,17 +21,8 @@ public class ItemController {
 //		Item item = itemService.getItemById(itemId);
 //		return item;
 //	}
-	@RequestMapping("/test")
+	@RequestMapping("/register")
 	private String showLogin() {
-		return "layout";
-	}
-	@Autowired
-	private ItemService itemService;
-	
-	@RequestMapping("/item/list")
-	@ResponseBody
-	private DataGridResult getItemById() {
-		 DataGridResult result = itemService.getItemList();
-	     return result;	
+		return "register";
 	}
 }

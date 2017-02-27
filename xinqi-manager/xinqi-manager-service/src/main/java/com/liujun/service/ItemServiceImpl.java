@@ -9,6 +9,7 @@ import com.liujun.entity.Item;
 import com.liujun.entity.ItemExample;
 import com.liujun.entity.ItemExample.Criteria;
 import com.liujun.mapper.ItemMapper;
+import com.taotao.common.pojo.DataGridResult;
 
 @Service
 public class ItemServiceImpl implements ItemService {
@@ -29,6 +30,18 @@ public class ItemServiceImpl implements ItemService {
 			item = list.get(0);
 		}
 		return item;
+	}
+	@Override
+	public DataGridResult getItemList() {
+		ItemExample itemExample = new ItemExample();
+      
+        List<Item> list = itemMapper.selectByExample(itemExample);
+        
+        DataGridResult result = new DataGridResult();
+        result.setRows(list);
+        
+        result.setTotal(list.size()); 
+		return result;
 	}
 
 }

@@ -14,7 +14,7 @@
 <h1>信旗酒店用品登陆界面</h1>
 <body style="text-align:center">
 	<div style="margin:20px 0;"></div>
-	<div class="easyui-panel" title="登陆" style="width:400px">
+	<div class="easyui-panel" title="注册账号" style="width:400px">
 		<div style="padding:10px 60px 20px 60px">
 	    <form id="register" method="post">
 	    	<table cellpadding="5">
@@ -23,13 +23,21 @@
 	    			<td><input class="easyui-textbox" type="text" name="account" data-options="required:true"></input></td>
 	    		</tr>
 	    		<tr>
+	    			<td>邮箱:</td>
+	    			<td><input class="easyui-textbox" type="text" name="email" data-options="required:true,validType:'email'"></input></td>
+	    		</tr>
+	    		<tr>
 	    			<td>密码:</td>
 	    			<td><input class="easyui-passwordbox" type="text" name="password" data-options="required:true"></input></td>
+	    		</tr>
+	    		<tr>
+	    			<td>地址:</td>
+	    			<td><input class="easyui-textbox" name="address" ata-options="required:true"></input></td>
 	    		</tr>
 	    	</table>
 	    </form>
 	    <div style="text-align:center;padding:5px">
-	    	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">登陆</a>
+	    	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="submitForm()">注册</a>
 	    	<a href="javascript:void(0)" class="easyui-linkbutton" onclick="clearForm()">清空</a>
 	    </div>
 	    </div>
