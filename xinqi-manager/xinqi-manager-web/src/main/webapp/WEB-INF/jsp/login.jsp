@@ -13,8 +13,7 @@
 </head>
 <h1>信旗酒店用品登陆界面</h1>
 <body style="text-align:center">
-	<div style="margin:20px 0;"></div>
-	<div class="easyui-panel" title="登陆" style="width:400px">
+	<div class="easyui-panel" id="p" title="登陆" style="width:400px">
 		<div style="padding:10px 60px 20px 60px">
 	    <form id="register" method="post">
 	    	<table cellpadding="5">

@@ -43,7 +43,7 @@
     <div data-options="region:'center',title:''">
         <div id="tabs" class="easyui-tabs">
             <div title="首页" style="padding:20px;">
-                    
+               <p>这里做今日已售商品分析</p>     
             </div>
         </div>
     </div>
